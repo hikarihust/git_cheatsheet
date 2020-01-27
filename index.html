@@ -169,63 +169,56 @@
 						<tr>
 							<td>1</td>
 							<td><strong>git clone repository </strong><i> [directory]</i></td>
-							<td>Clone Remote Teposity <strong>reposity</strong> và đặt vào folder <strong>[directory]</strong></td>
+							<td>リモートの<strong>repository</strong>クーロン<strong>[directory]</strong>を指定すれば<strong>[directory]</strong>にクーロンする</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
 							<td>2</td>
 							<td><strong>git remote –v</strong></td>
-							<td>Xem thông tin Remote reposity hiện tại</td>
+							<td>現在のリモート情報を確認する</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
 							<td>3</td>
 							<td><strong>git remote show </strong><i>name</i></td>
-							<td>Xem thông tin <strong>name</strong> hiện tại</td>
+							<td>現在のリモートの<strong>name</strong>を確認する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>4</td>
 							<td><strong>git remote add </strong><i>name repository</i></td>
-							<td>Add Local Repository lên Remote Repository tại <strong>repository</strong> và đặt tên nó là <strong>name</strong></td>
+							<td>現在のローカルを<strong>name</strong>でリモート<strong>repository</strong>追加する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>5</td>
 							<td><strong>git remote rename </strong><i>name1 name2</i></td>
-							<td>Đổi tên <strong>name1</strong> thành <strong>name2</strong></td>
+							<td>リモート名を<strong>name1</strong>から<strong>name2</strong>に変更する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>6</td>
 							<td><strong>git remote remove </strong><i>name</i></td>
-							<td>Xóa remote <strong>name</strong></td>
+							<td><strong>name</strong>リモートを削除する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>7</td>
 							<td><strong>git pull </strong><i>name branch</i></td>
-							<td>Kiểm tra sự thay đổi trên Remote Repository và merge vào phiên làm việc hiện tại</td>
+							<td>リモートリポジトリとロカールバージョンが違えばマージする</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>8</td>
 							<td><strong>git push </strong><i>name branch</i></td>
-							<td>Đẩy dữ liệu lên remote repository</td>
-							<td>...</td>
-						</tr>
-
-						<tr>
-							<td>9</td>
-							<td><strong>git config --global.config </strong><i>alias.st status</i></td>
-							<td>Tạo alias</td>
+							<td>ロカールブランチをリモートリポジトリにプッシュする</td>
 							<td>...</td>
 						</tr>
 					</tbody>
@@ -265,97 +258,90 @@
 						<tr>
 							<td>1</td>
 							<td><strong>git branch</strong><i> branchname</i></td>
-							<td>Tạo nhánh mới có tên <strong>branchname</strong> </td>
+							<td><strong>branchname</strong>ブランチを作成する</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
 							<td>2</td>
 							<td><strong>git log --oneline --decorate</strong></td>
-							<td>Xem đang làm việc với nhánh nào</td>
+							<td>ログを確認</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
 							<td>3</td>
 							<td><strong>git checkout</strong><i> branchname</i></td>
-							<td>Chuyển làm việc sang nhánh <strong>branchname</strong></td>
+							<td>ワークスペースを<strong>branchname</strong>に変換する</td>
 							<td>...</td>
 						</tr>
 						<tr>
 							<td>4</td>
 							<td><strong>git checkout -b</strong><i> branchname</i></td>
-							<td>Tạo nhánh  <strong>branchname</strong> và chuyển làm việc sang nhánh <strong>branchname</strong></td>
+							<td><strong>branchname</strong>を新規作成、且つ<strong>branchname</strong>にワークスペースを変換する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>5</td>
 							<td><strong>git branch</strong></td>
-							<td>Xem danh sách các nhánh, nhánh nào có dấu * là nhánh chúng ta đang làm việc</td>
+							<td>ブランチ一覧を確認する, * 付いているブランチは現在作業しているブランチ</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>6</td>
 							<td><strong>git branch -v</strong></td>
-							<td>Xem commit mới nhất ở mỗi nhánh</td>
+							<td>ブランチそれぞれの最新コミットを確認する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>7</td>
 							<td><strong>git merge </strong><i> branchname</i></td>
-							<td>Merge nhánh hiện tại với nhánh<strong> branchname</strong></td>
+							<td>現在のブランチを<strong> branchname</strong>にマージする</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>8</td>
 							<td><strong>git branch </strong><i>--merged</i></td>
-							<td>Xem danh sách các nhánh đã merge </td>
+							<td>マージされているブランチ一覧を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>9</td>
 							<td><strong>git branch </strong><i>--no-merged</i></td>
-							<td>Xem danh sách các nhánh chưa được merge</td>
+							<td>マージされていないブランチ一覧を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>10</td>
 							<td><strong>git branch -d </strong><i>branchname</i></td>
-							<td>Xóa nhánh <strong>branchname</strong> và nhánh này <strong>đã được merge</strong></td>
+							<td><strong>マージされたbranchname</strong>ブランチを削除する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>11</td>
 							<td><strong>git branch -D </strong><i>branchname</i></td>
-							<td>Xóa nhánh <strong>branchname</strong> và nhánh này <strong>chưa được merge</strong></td>
+							<td><strong>マージされていないbranchname</strong>ブランチを削除する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>12</td>
-							<td><strong>git branch -D </strong><i>branchname</i></td>
-							<td>Xóa nhánh <strong>branchname</strong> và nhánh này <strong>chưa được merge</strong></td>
+							<td><strong>git branch -m </strong><i>oldname newname</i></td>
+							<td><strong>oldename</strong>から<strong>newname</strong>に名前を変更する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>13</td>
-							<td><strong>git branch -m </strong><i>oldname newname</i></td>
-							<td>Thực hiện việc đổi tên nhánh từ <strong>oldename<strong> thành </strong>newname</strong></td>
-							<td>...</td>
-						</tr>
-
-						<tr>
-							<td>14</td>
 							<td><strong>git branch -m </strong><i>newname</i></td>
-							<td>Đổi tên nhánh hiện tại thành </strong>newname</strong></td>
+							<td>現在のブランチ名を</strong>newname</strong>に変更する</td>
 							<td>...</td>
 						</tr>
 						<!-- BRANCH : END -->
@@ -365,86 +351,79 @@
 							<td colspan="4" class="subtopic">TAG</td>
 						</tr>
 						<tr>
-							<td>12</td>
+							<td>1</td>
 							<td><strong>git tag </strong><i>tagname</i></td>
-							<td>Tạo mới một Lightweight Tag có tên là <strong>tagname</strong></td>
+							<td>新規<strong>tagname</strong>ブランチを作成、コメントなし</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>13</td>
+							<td>2</td>
 							<td><strong>git tag </strong><i>-a tagname -m “Mesage”</i></td>
-							<td>Tạo mới một Annotated Tag có tên là <strong>tagname</strong> cùng với thông điệp</td>
+							<td>新規<strong>tagname</strong>ブランチを作成、コメントあり</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>13</td>
+							<td>3</td>
 							<td><strong>git tag </strong><i>-a tagname commitID -m “Mesage”</i></td>
-							<td>Thêm annotated tag có tên <strong>tagname</strong> vào commit có ID là <strong>commitID</strong></td>
+							<td>新規<strong>tagname</strong>を指定した<strong>commitID</strong>に作成する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>14</td>
+							<td>4</td>
 							<td><strong>git tag </strong></td>
-							<td>Xem tất cả các tag hiện có</td>
+							<td>タグの一覧を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>15</td>
+							<td>5</td>
 							<td><strong>git tag </strong> <i>-n</i></td>
-							<td>Xem tất cả các tag hiện có và phần miêu tả của task</td>
+							<td>タグの一覧且つメッセージの内容を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>16</td>
+							<td>6</td>
 							<td><strong>git show tagname</strong></td>
-							<td>Xem thông tin <strong>tagname</strong></td>
+							<td><strong>tagname</strong>ブランチの情報を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>17</td>
+							<td>7</td>
 							<td><strong>git tag –d </strong><i>tagname</i></td>
-							<td>Xóa tag có tên <strong>tagname</strong></td>
-							<td>...</td>
-						</tr>
-
-						<tr>
-							<td>18</td>
-							<td><strong>git tag -a tagname X </strong><i>-m message</i></td>
-							<td>Thêm annotated tag <strong>tagname</strong> vào commit có ID là X</td>
+							<td><strong>tagname</strong>ブランチを削除</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
-							<td>19</td>
+							<td>8</td>
 							<td><strong>git checkout –b branchname tagname</strong></td>
-							<td>Tạo một nhánh mới <strong>branchname</strong> từ tag đã tồn tại <strong>tagname</strong></td>
+							<td>新規<strong>branchname</strong>ブランチを存在している<strong>tagname</strong>から作成する</td>
 							<td>...</td>
 						</tr>
 					
 						<tr>
-							<td>20</td>
+							<td>9</td>
 							<td><strong>git push name tagname</strong></td>
-							<td>Thêm <strong>tagname</strong> vào remote <strong>name</strong></td>
+							<td><strong>tagname</strong>タグを<strong>name</strong>リモートに追加する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>21</td>
+							<td>10</td>
 							<td><strong>git push name --tags</strong></td>
-							<td>Thêm tất cả tag vào remote <strong>name</strong></td>
+							<td>ロカールにあるタグを全部<strong>name</strong>リモートに追加する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>22</td>
+							<td>11</td>
 							<td><strong>git push name -d tagname</strong></td>
-							<td>Xóa <strong>tagname</strong> tại Remote repository có tên <strong>name</strong></td>
+							<td><strong>name</strong>リポジトリにある<strong>tagname</strong>ブランチを削除する</td>
 							<td>...</td>
 						</tr>
 						<!-- TAG : END -->
@@ -453,45 +432,39 @@
 						<tr>
 							<td colspan="4" class="subtopic">REMOTE BRANCH</td>
 						</tr>
-						<tr>
-							<td>23</td>
-							<td><strong>git remote push </strong> <i>remote_name branch_name</i></td>
-							<td>Đẩy nhánh <strong>branch_name</strong> từ Local Repo lên Remote Repo</td>
-							<td>...</td>
-						</tr>
 						
 						<tr>
-							<td>24</td>
+							<td>1</td>
 							<td><strong>git remote show </strong> <i>remote_name</i></td>
-							<td>Xem danh sách các nhánh trên Remote Repo</td>
+							<td><i>remote_name</i>リポジトリにあるブランチを確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>25</td>
+							<td>2</td>
 							<td><strong>git ls-remote  </strong> <i>remote_name</i></td>
-							<td>Xem danh sách các nhánh và tag trên Remote Repo</td>
+							<td><i>remote_name</i>にあるブランチ且つタグを確認</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
-							<td>26</td>
+							<td>3</td>
 							<td><strong>git clone -b </strong> <i>branch remote_url</i></td>
-							<td>Clone một Branch chỉ định từ Remote repo</td>
+							<td><i>branch remote_url</i>をクーロンする</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
-							<td>27</td>
+							<td>4</td>
 							<td><strong>git checkout </strong> <i>remote_name/branch_name</i></td>
-							<td>Chuyển đổi làm việc sang nhánh remote</td>
+							<td><i>remote_name/branch_name</i>にワークスペースを変換する</td>
 							<td>...</td>
 						</tr>
 						
 						<tr>
-							<td>28</td>
+							<td>5</td>
 							<td><strong>git push origin :</strong><i>branch_name</i></td>
-							<td>Xóa một Branch từ Remote repo</td>
+							<td>リポジトリにある<i>branch_name</i>を削除する</td>
 							<td>...</td>
 						</tr>
 						<!-- REMOTE BRANCH : END -->
@@ -501,9 +474,9 @@
 							<td colspan="4" class="subtopic">REBASE</td>
 						</tr>
 						<tr>
-							<td>29</td>
+							<td>1</td>
 							<td>git rebase <strong>branch_name</strong></td>
-							<td>Chạy lại lịch sử commit của branch_name trên nhánh hiện tại</td>
+							<td><strong>branch_name</strong>を現在のブランチに合体する。新規のコミットが発生しない</td>
 							<td>...</td>
 						</tr>
 
@@ -586,40 +559,40 @@
 						<tr>
 							<td>1</td>
 							<td><strong>git stash </strong></td>
-							<td>Lưu toàn bộ nội dung công việc đang làm dở </td>
+							<td>作業をしている状態をスタッシュに格納する</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>2</td>
 							<td><strong>git stash list</strong></td>
-							<td>Xem lại danh sách các lần lưu thay đổi</td>
+							<td>スタッシュに格納される一覧を確認</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>3</td>
 							<td><strong>git stash pop [stash@{1}]<br>git stash apply stash@{1}</strong></td>
-							<td>Áp dụng thay đổi từ stash</td>
+							<td>スタッシュからだす</td>
 							<td>...</td>
 						</tr>
 
 						<tr>
 							<td>4</td>
 							<td><strong>git stash drop stash@{1}<br>git stash clear</strong></td>
-							<td>Xóa các thay đổi không cần thiết</td>
+							<td>スタッシュに格納されるのを削除する</td>
 							<td>...</td>
 						</tr>
 						<!-- STASH : END -->
 						
 						<!-- CẤU HÌNH P4MERGE : START -->
 						<tr>
-							<td colspan="4" class="subtopic">CẤU HÌNH P4MERGE</td>
+							<td colspan="4" class="subtopic">Config P4MERGE</td>
 						</tr>
 
 						<tr>
 							<td>1</td>
-							<td><strong>Cấu hình difftool </strong></td>
+							<td><strong>コンフィッグdifftool </strong></td>
 							<td>[diff]
 									tool = p4merge
 								[difftool "p4merge"]
@@ -635,7 +608,7 @@
 
 						<tr>
 							<td>2</td>
-							<td><strong>Cấu hình mergetool </strong></td>
+							<td><strong>コンフィッグmergetool </strong></td>
 							<td>
 								[merge]
 									tool = p4merge
